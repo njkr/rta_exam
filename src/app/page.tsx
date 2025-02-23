@@ -41,7 +41,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid sm:grid-cols-1 grid-cols-2 gap-2">
         {questions.map((data, index) => (
           <QuestionCard key={index} data={data} />
         ))}
