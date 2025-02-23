@@ -16,7 +16,7 @@ interface QuestionCardProps {
 const QuestionCard: React.FC<QuestionCardProps> = ({ data }) => {
   return (
     <div className="container mx-auto p-4">
-      <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl">
+      <div className="bg-white p-6 rounded-lg shadow-lg max-w-full mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl">
         <h2 className="text-xl font-bold text-gray-800">{data.question}</h2>
 
         <ul className="mt-4 space-y-2 text-gray-600">

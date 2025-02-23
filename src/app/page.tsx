@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <div className="container mx-auto">
-      <div className="sticky top-0 shadow-md z-10 p-4">
+      <div className="sticky top-0 shadow-md z-10 p-4 backdrop-blur-md">
         <div className="w-full mx-auto">
           <input
             type="text"
@@ -41,7 +41,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="grid sm:grid-cols-1 grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {questions.map((data, index) => (
           <QuestionCard key={index} data={data} />
         ))}
